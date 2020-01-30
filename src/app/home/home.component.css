@@ -1,0 +1,14 @@
+.custom {
+  background-image: url("/assets/images/hero_bg_1.2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+}
+
+.customLogin {
+  margin-top: 20%;
+}
+.customText {
+  z-index: 10;
+  padding-top: 20%;
+}

@@ -1,0 +1,54 @@
+<div class="container-fluid custom" style="z-index: 999;">
+  <div class="row mt-5" data-aos="fade-left">
+    <div class="col">
+      <div class="card text-center shadow myelement">
+        <div class="card-header customHeader">
+          Liste des Tiers
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Listes des Tier</h5>
+          <app-liste-tiers-table></app-liste-tiers-table>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"></div>
+</div>
+
+<!-- Large modal -->
+
+<div
+  class="modal fade bd-example-modal-lg"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myLargeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg" role="document" style="margin-top: 5%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">AJOUT TIER</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-ajout-tiers-form></app-ajout-tiers-form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Fermer
+        </button>
+        <button type="button" class="btn btn-primary">Valider</button>
+      </div>
+    </div>
+  </div>
+</div>

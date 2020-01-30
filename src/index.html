@@ -1,14 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Expresslogistic</title>
-  <base href="/">
+  <head>
+    <meta charset="utf-8" />
+    <title>Expresslogistic</title>
+    <base href="/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+
+    <script src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+    <base href="/" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"
+    />
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css" />
+
+    <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <app-root></app-root>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        $("#datetimepicker2").datetimepicker({
+          locale: "ru"
+        });
+      });
+    </script>
+    <script>
+      function deleteRow(btn) {
+        var row = btn.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+      }
+    </script>
+
+    <script>
+      $(function() {
+        $("#datetimepicker1").datetimepicker({
+          format: "DD-MM-YYYY LT"
+        });
+        $("#datetimepicker2").datetimepicker({
+          format: "DD-MM-YYYY"
+        });
+        $("#datetimepicker3").datetimepicker({
+          format: "LT"
+        });
+        $("#datetimepicker3").datetimepicker({
+          format: "LT"
+        });
+      });
+    </script>
+  </body>
 </html>

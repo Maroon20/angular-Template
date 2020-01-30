@@ -1,0 +1,14 @@
+.custom {
+  border-left: 6px solid #f89d13;
+  /* background-color: lightgrey;*/
+  background: rgba(248, 157, 19, 0.1);
+}
+
+.custom2 {
+  border-left: 6px solid #f89d13;
+  /*background-color: lightgrey;*/
+  background: rgba(248, 157, 19, 0.1);
+
+  margin-top: 16px;
+  padding: 5px;
+}

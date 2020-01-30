@@ -1,0 +1,163 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1">
+      <button
+        class="btn btn-warning"
+        (click)="addRow()"
+        style="color: white;widows: 150px;font-size: x-small;"
+      >
+        Nouveau colis
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <table class="table" id="myTable">
+      <tbody>
+        <tr>
+          <td>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text"
+                  id="inputGroupPrepend"
+                  style="font-size: x-small;"
+                  >1</span
+                >
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                required
+                value="Nbre colis"
+                style="font-size: x-small;"
+              />
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </td>
+          <td>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              value="Longueur en cm"
+              required
+              style="font-size: x-small;"
+            />
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </td>
+          <td>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              value="Largeur en cm"
+              required
+              style="font-size: x-small;"
+            />
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </td>
+          <td>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              value="Hauteur en cm"
+              required
+              style="font-size: x-small;"
+            />
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </td>
+          <td>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              value="Volume en m3"
+              required
+              style="font-size: x-small;"
+            />
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </td>
+          <td>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              value="Poids brut"
+              required
+              style="font-size: x-small;"
+            />
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </td>
+          <td>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustomUsername"
+                aria-describedby="inputGroupPrepend"
+                required
+                value="Poids taxable en kg"
+                style="font-size: x-small;"
+              />
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </td>
+          <td>
+            <select
+              class="custom-select"
+              id="validationCustom04"
+              required
+              style="width: 200px;"
+              style="font-size: x-small;"
+              value="Gerbable"
+            >
+              <option selected disabled value="">Gerbable</option>
+              <option>oui</option>
+              <option>non</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </td>
+
+          <td>
+            <button
+              class="btn btn-success"
+              style="width: 120px; font-size: small;background-color: #28a745;color:white;border-radius: 5%;"
+              dc3545
+            >
+              Calculer
+            </button>
+          </td>
+          <td>
+            <button
+              class="btn btn-danger"
+              style="width: 120px; font-size: small;background-color: #dc3545;color:white;border-radius: 5%;"
+              onclick="deleteRow(this)"
+            >
+              Supprimer
+            </button>
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

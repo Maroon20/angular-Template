@@ -1,0 +1,47 @@
+.full-width-table {
+  width: 100%;
+  height: 100%;
+}
+
+.customeListe {
+  padding-top: 5%;
+}
+.mat-header-cell {
+  background-color: #1f1f1f;
+  font-family: "calibri";
+  font-style: bold;
+  text-align: ".";
+  text-align: "." center;
+  color: white;
+
+  /* Valeurs de longueurs */
+  /* Type <length>        */
+  font-size: 15px;
+  font-size: 1em;
+
+  /* Valeurs proportionnelles */
+  /* Type <percentage>        */
+  font-size: 120%;
+}
+.mat-cell {
+  background-color: whitesmoke;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  text-align: ".";
+  text-align: "." center;
+  color: #2d2c30;
+
+  /* Valeurs de longueurs */
+  /* Type <length>        */
+  font-size: 15px;
+  font-size: 1em;
+
+  /* Valeurs proportionnelles */
+  /* Type <percentage>        */
+  font-size: 100%;
+}
+
+.styleb {
+  border-radius: 7%;
+  font-family: "calibri" !important;
+  font-style: bold;
+}

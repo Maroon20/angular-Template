@@ -1,0 +1,94 @@
+<div class="container-fluid">
+  <div class="row customeListe">
+    <div class="col-md-1">
+      <button
+        type="button"
+        class="btn btn-outline-warning styleb"
+        data-toggle="modal"
+        data-target=".bd-example-modal-lg"
+      >
+        Ajout Tiers
+      </button>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="input-group mb-1">
+        <input type="text" class="form-control" placeholder="Recherche" />
+        <div class="input-group-append">
+          <button class="btn btn-outline-warning styleb" type="submit">
+            Go
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br /><br />
+  <div class="row">
+    <div class="col">
+      <table mat-table class="full-width-table" matSort aria-label="Elements">
+        <!-- Id Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
+          <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+        </ng-container>
+
+        <!-- ADDRESS1 Column -->
+        <ng-container matColumnDef="ADDRESS1">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>ADDRESS1</th>
+          <td mat-cell *matCellDef="let row">{{ row.ADDRESS1 }}</td>
+        </ng-container>
+        <!-- ADDRESS2 Column -->
+        <ng-container matColumnDef="ADDRESS2">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>ADDRESS2</th>
+          <td mat-cell *matCellDef="let row">{{ row.ADDRESS2 }}</td>
+        </ng-container>
+        <!-- ADDRESS3 Column -->
+        <ng-container matColumnDef="ADDRESS3">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>ADDRESS3</th>
+          <td mat-cell *matCellDef="let row">{{ row.ADDRESS3 }}</td>
+        </ng-container>
+        <!-- CODE_POSTAL Column -->
+        <ng-container matColumnDef="CODE_POSTAL">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>CODE_POSTAL</th>
+          <td mat-cell *matCellDef="let row">{{ row.CODE_POSTAL }}</td>
+        </ng-container>
+        <!-- DEPARTEMENT Column -->
+        <ng-container matColumnDef="DEPARTEMENT">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>DEPARTEMENT</th>
+          <td mat-cell *matCellDef="let row">{{ row.DEPARTEMENT }}</td>
+        </ng-container>
+        <!-- VILLE Column -->
+        <ng-container matColumnDef="VILLE">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>VILLE</th>
+          <td mat-cell *matCellDef="let row">{{ row.VILLE }}</td>
+        </ng-container>
+        <!-- ACTION Column -->
+        <ng-container matColumnDef="ACTION">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>ACTION</th>
+          <td mat-cell *matCellDef="let row">
+            <button type="button" class="btn btn-outline-warning styleb">
+              CONTACT</button
+            >&nbsp;
+            <button type="button" class="btn btn-outline-danger styled">
+              MODIFIER
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+
+      <mat-paginator
+        #paginator
+        [length]="dataSource?.data.length"
+        [pageIndex]="0"
+        [pageSize]="50"
+        [pageSizeOptions]="[25, 50, 100, 250]"
+      >
+      </mat-paginator>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.custom {
+  background-image: url("/assets/images/hero_bg_1.2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  height: 100vmax;
+  padding-top: 8%;
+  background-attachment: fixed;
+}
+.myelement {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+.customLogin {
+  margin-top: 20%;
+}
+.customText {
+  z-index: 10;
+  padding-top: 20%;
+}
+.customHeader {
+  background: rgba(248, 157, 19, 0.3);
+}
